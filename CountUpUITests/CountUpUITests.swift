@@ -28,8 +28,14 @@ class CountUpUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        let staticText = app.staticTexts["testLabel"]
+        let button = app.buttons["testButton"]
+
+        XCTAssertTrue(staticText.label == "0")
+        button.tap()
+        button.tap()
+        XCTAssertTrue(staticText.label == "2")
     }
     
 }
