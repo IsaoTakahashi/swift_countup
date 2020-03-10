@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         countLabel.text = String(tappedCount)
     }
 
-    @IBAction func clickButton(_ sender: Any) {
+    @IBAction func clickButton(_ sender: UIButton) {
         tappedCount += 1;
         displayTappedCount()
     }
