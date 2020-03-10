@@ -35,5 +35,10 @@ class ViewController: UIViewController {
         tappedCount += 1;
         displayTappedCount()
     }
+    
+    @IBAction func resetCount(_ sender: UIButton) {
+        tappedCount = 0
+        displayTappedCount()
+    }
 }
 

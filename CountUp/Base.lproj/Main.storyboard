@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3px-yI-33Y">
-                                <rect key="frame" x="187.66666666666666" y="336" width="39" height="48"/>
+                                <rect key="frame" x="169" y="336" width="76" height="48"/>
                                 <accessibility key="accessibilityConfiguration" identifier="testButton"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="+ 1"/>
@@ -34,11 +34,26 @@
                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nri-RX-R4X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcP-yv-KXi">
+                                <rect key="frame" x="169" y="404" width="76" height="49"/>
+                                <accessibility key="accessibilityConfiguration" identifier="resetButton"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9s-k9-tQT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JUh-YF-s5z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUL-Xa-jhx"/>
                             <constraint firstItem="3px-yI-33Y" firstAttribute="centerX" secondItem="JUh-YF-s5z" secondAttribute="centerX" id="Oyg-R3-ny5"/>
+                            <constraint firstItem="KcP-yv-KXi" firstAttribute="width" secondItem="3px-yI-33Y" secondAttribute="width" id="b5z-Wx-mg0"/>
+                            <constraint firstItem="KcP-yv-KXi" firstAttribute="centerX" secondItem="3px-yI-33Y" secondAttribute="centerX" id="mTP-qF-5Wj"/>
+                            <constraint firstItem="KcP-yv-KXi" firstAttribute="top" secondItem="3px-yI-33Y" secondAttribute="bottom" constant="20" id="nZ3-Mq-l2q"/>
                             <constraint firstItem="3px-yI-33Y" firstAttribute="top" secondItem="JUh-YF-s5z" secondAttribute="bottom" constant="50" id="yyO-ag-vWH"/>
                             <constraint firstItem="JUh-YF-s5z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="z6r-ZK-e81"/>
                         </constraints>
